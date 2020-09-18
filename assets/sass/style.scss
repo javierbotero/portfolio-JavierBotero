@@ -40,6 +40,16 @@ $roboto: 'Roboto', sans-serif;
   padding: 10px 12px;
 }
 
+%bullet {
+  width: 12px;
+  height: 12px;
+  background: #FF6B00;
+}
+
+%input {
+  color: #979493;
+}
+
 @mixin bg-projects($url){
   background: url($url);
   position: absolute;
@@ -164,6 +174,55 @@ $roboto: 'Roboto', sans-serif;
 
 .projects-mini {
   margin: 20px 0;
+}
+
+.diamond {
+  @extend %bullet;
+  transform: rotate(-45deg);
+}
+
+.square {
+  @extend %bullet;
+}
+
+.subtitles-about-me {
+  @extend %tag;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 44px;
+}
+
+.items-about-me {
+  @extend %tag;
+  color: #FFFFFF;
+}
+
+.form-inputs {
+  @extend %input;
+  @extend %text-one;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #979493;
+}
+
+.form-message {
+  @extend %input;
+  @extend %text-one;
+  border: 0;
+  background: #FBF8F7;
+}
+
+.project {
+  flex-direction: column;
+  padding: 16px;
+  position: absolute;
+  left: calc(50% - 343px/2);
+  top: 60px;
+  background: #FFFFFF;
+  border: 1px solid #DFE1E6;
+  box-sizing: border-box;
 }
 
 @media (min-width: 576px) {

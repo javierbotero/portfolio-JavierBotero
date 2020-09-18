@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/be6c8de5f0.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
     <title>Javier Botero Portfolio</title>
 </head>
 <body class="text-break">
@@ -23,17 +24,19 @@
       <li class="d-block d-sm-none"><i class="fas fa-bars"></i></li>
     </ul>
   </nav>
-  <header class="bg-dark">
+  <header class="bg-dark pt-5 px-3">
+    <br>
+    <br>
     <div>
       <h1 class="main-title">Hi! I'm Javier</h1>
       <h5 class="title-black">I'm a Full Stack Web Developer</h5>
-      <p class="black">My stacks are Ruby on Rails, React & Redux, and WordPress, I can potentially collaborate in projects based on these stacks and languages, Ruby, Javascript, and PHP.</p>
+      <p class="black m-0">My stacks are Ruby on Rails, React & Redux, and WordPress, I can potentially collaborate in projects based on these stacks and languages, Ruby, Javascript, and PHP.</p>
+      <nav class="text-light d-flex justify-content-around pt-3">
+        <i class="fab fa-github"><a href="https://github.com/javierbotero"></a></i>
+        <i class="fab fa-linkedin-in"><a href="https://www.linkedin.com/in/javierboterodev/"></a></i>
+        <i class="fab fa-twitter"><a href="https://twitter.com/Javierboterodev"></a></i>
+      </nav>
     </div>
-    <nav>
-      <i class="fab fa-github"><a href="https://github.com/javierbotero"></a></i>
-      <i class="fab fa-linkedin-in"><a href="https://www.linkedin.com/in/javierboterodev/"></a></i>
-      <i class="fab fa-twitter"><a href="https://twitter.com/Javierboterodev"></a></i>
-    </nav>
     <div>
       <div class="one"></div>
       <div class="two"></div>
@@ -43,17 +46,25 @@
       <div class="six"></div>
       <div class="seven"></div>
     </div>
+    <br>
+    <br>
+    <br>
   </header>
 
   <main class="white-section px-3">
+    <br>
+    <br>
+    <br>
     <div>
       <h5 class="title-white">My latest Works</h5>
       <hr>
     </div>
+    <br>
+    <br>
     <div>
       <div class="w-100 bg-main-pic"></div>
       <aside>
-        <h3 class="subtitle-white">Workout project app</h3>
+        <h3 class="subtitle-white py-3">Workout project app</h3>
         <p class="white">
             In the app, the users can write
             articles about exercise or workout individually, in groups,
@@ -66,7 +77,8 @@
         <span class="tag-bg-white my-1">Cloudinary</span>
         <button class="black-project orange-bg p-2 border-0 d-block" onclick="showProject(0)">See Project</button>
       </aside>
-      <section class="project d-none">
+      <section class="project d-block" onclick="hideProject(0)">
+        <div class="vw-100 p-5" onclick="hideProject(0)">x</div>
         <h4 class="subtitle-white">WorkOut App Project</h4>
         <span class="tag">Rails</span>
         <span class="tag">Ruby</span>
@@ -107,7 +119,8 @@
         <div class="w-100 h-100 bg-pic-scraper d-flex flex-column-reverse" onclick="showProject(1)">
           <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn">See Project</div>
         </div>
-        <section class="project d-none">
+        <section class="project d-block" onclick="hideProject(1)">
+          <div class="vw-100 p-5" onclick="hideProject(1)">x</div>
           <h4 class="title-black-project">Scraper Bot</h4>
           <span class="tag">Ruby</span>
           <img src="" alt="Scraper Bot">
@@ -138,12 +151,13 @@
             <span class="tag-bg-black mt-1">HTML</span>
             <span class="tag-bg-black mt-1">SASS</span>
           </div>
-          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(1)">See Project</div>
+          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(2)">See Project</div>
         </div>
         <div class="w-100 h-100 bg-pic-scraper d-flex flex-column-reverse" onclick="showProject(2)">
           <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn">See Project</div>
         </div>
-        <section class="project d-none">
+        <section class="project d-block" onclick="hideProject(2)">
+          <div class="vw-100 p-5" onclick="hideProject(2)">x</div>
           <h4 class="title-black-project">Pets Food Page Design</h4>
           <span class="tag">Rails</span>
           <span class="tag">Ruby</span>
@@ -177,12 +191,13 @@
             <span class="tag-bg-black mt-1">CSS</span>
             <span class="tag-bg-black mt-1">HTML</span>
           </div>
-          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(1)">See Project</div>
+          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(3)">See Project</div>
         </div>
         <div class="w-100 h-100 bg-pic-scraper d-flex flex-column-reverse" onclick="showProject(3)">
           <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn">See Project</div>
         </div>
-        <section class="project d-none">
+        <section class="project d-block" onclick="hideProject(3)">
+          <div class="vw-100 p-5" onclick="hideProject(3)">x</div>
           <h4 class="title-black-project">WorkOut App Project</h4>
           <span class="tag">Rails</span>
           <span class="tag">Ruby</span>
@@ -216,12 +231,13 @@
             <span class="tag-bg-black mt-1">CSS</span>
             <span class="tag-bg-black mt-1">HTML</span>
           </div>
-          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(1)">See Project</div>
+          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(4)">See Project</div>
         </div>
         <div class="w-100 h-100 bg-pic-scraper d-flex flex-column-reverse" onclick="showProject(4)">
           <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn">See Project</div>
         </div>
-        <section class="project d-none">
+        <section class="project d-block" onclick="hideProject(4)">
+          <div class="vw-100 p-5" onclick="hideProject(4)">x</div>
           <h4 class="title-black-project">WorkOut App Project</h4>
           <span class="tag">Rails</span>
           <span class="tag">Ruby</span>
@@ -255,12 +271,13 @@
             <span class="tag-bg-black mt-1">CSS</span>
             <span class="tag-bg-black mt-1">HTML</span>
           </div>
-          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(1)">See Project</div>
+          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(5)">See Project</div>
         </div>
         <div class="w-100 h-100 bg-pic-scraper d-flex flex-column-reverse" onclick="showProject(5)">
           <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn">See Project</div>
         </div>
-        <section class="project d-none">
+        <section class="project d-block" onclick="hideProject(5)">
+          <div class="vw-100 p-5" onclick="hideProject(5)">x</div>
           <h4 class="title-black-project">WorkOut App Project</h4>
           <span class="tag">Rails</span>
           <span class="tag">Ruby</span>
@@ -294,12 +311,13 @@
             <span class="tag-bg-black mt-1">CSS</span>
             <span class="tag-bg-black mt-1">HTML</span>
           </div>
-          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(1)">See Project</div>
+          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(6)">See Project</div>
         </div>
         <div class="w-100 h-100 bg-pic-scraper d-flex flex-column-reverse" onclick="showProject(6)">
           <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn">See Project</div>
         </div>
-        <section class="project d-none">
+        <section class="project d-block" onclick="hideProject(6)">
+          <div class="vw-100 p-5" onclick="hideProject(6)">x</div>
           <h4 class="title-black-project">WorkOut App Project</h4>
           <span class="tag">Rails</span>
           <span class="tag">Ruby</span>
@@ -319,69 +337,88 @@
     </div>
   </main>
 
-  <section class="black-section">
-  <div>
+  <section class="bg-dark p-3">
     <div>
-      <h3>About me</h3>
-      <p>
-          I consider myself a person interested in constant self-improvement
-          so besides have a strong foundation in Ruby on Rails, React
-          & Redux, and WordPress I am also open to learning new languages
-          and other stacks.
-      </p>
-      <a href="assets/resume.pdf" download="resume" name="Javier Botero Resume">
-          Get my Resume
-      </a>
+      <br>
+      <br>
+      <br>
+      <div>
+        <h3 class="main-title py-4">About me</h3>
+        <p class="black-project pb-3">
+            I consider myself a person interested in constant self-improvement
+            so besides have a strong foundation in Ruby on Rails, React
+            & Redux, and WordPress I am also open to learning new languages
+            and other stacks.
+        </p>
+        <a class="orange-bg justify-content-center text-light p-2" href="assets/resume.pdf" download="resume" name="Javier Botero Resume">
+            Get my Resume
+        </a>
+      </div>
+      <div>
+        <div class="one-a"></div>
+        <div class="two-a"></div>
+        <div class="three-a"></div>
+        <div class="four-a"></div>
+        <div class="five-a"></div>
+        <div class="six-a"></div>
+        <div class="seven-a"></div>
+      </div>
     </div>
-    <div>
-      <div class="one-a"></div>
-      <div class="two-a"></div>
-      <div class="three-a"></div>
-      <div class="four-a"></div>
-      <div class="five-a"></div>
-      <div class="six-a"></div>
-      <div class="seven-a"></div>
+    <br>
+    <hr class="text-light">
+    <br>
+    <div class="d-flex flex-column align-items-center">
+    <div class="d-flex flex-column align-items-center">
+      <div class="d-flex align-items-center">
+        <span class="diamond d-block"></span>
+        <h3 class="subtitles-about-me m-0">Language</h3>
+      </div>
+      <span class="items-about-me">Ruby</span>
+      <span class="items-about-me">Javascript</span>
+      <span class="items-about-me">PHP</span>
+      <span class="items-about-me">CSS</span>
+    </div>
+    <div class="d-flex flex-column align-items-center">
+      <div class="d-flex align-items-center">
+        <span class="diamond rounded-circle d-block"></span>
+        <h3 class="subtitles-about-me m-0">Frameworks</h3>
+      </div>
+      <span class="items-about-me">Ruby on Rails</span>
+      <span class="items-about-me">React & Redux</span>
+      <span class="items-about-me">Wordpress</span>
+      <span class="items-about-me">RSpec</span>
+      <span class="items-about-me">SASS</span>
+    </div>
+    <div class="d-flex flex-column align-items-center">
+      <div class="d-flex align-items-center">
+        <span class="square d-block"></span>
+        <h3 class="subtitles-about-me m-0">Skills</h3>
+      </div>
+      <span class="items-about-me">Github</span>
+      <span class="items-about-me">Remote Work</span>
+      <span class="items-about-me">Pair programmin</span>
+      <span class="items-about-me">Terminal</span>
     </div>
   </div>
   <br>
-  <ul>
-    <li>
-      Languages
-      <span>Ruby</span>
-      <span>Javascript</span>
-      <span>PHP</span>
-      <span>CSS</span>
-    </li>
-    <li>
-      Frameworks
-      <span>Ruby on Rails</span>
-      <span>React & Redux</span>
-      <span>Wordpress</span>
-      <span>RSpec</span>
-      <span>SASS</span>
-    </li>
-    <li>
-      Skills
-      <span>Github</span>
-      <span>Remote Work - Pair programmin</span>
-      <span>Bash Terminal</span>
-    </li>
-  </ul>
+  <br>
+  <br>
 </section>
 
-<hr>
-
-<footer>
+<footer class="p-3">
+  <br>
+  <br>
+  <br>
   <p>
-    If you consider that I have the potential to work
-    in any of your current projects please contact me
-    on <a href="https://www.linkedin.com/in/javierboterodev/">Linkedin</a>
-    or feel free to send me a message at javierbotero10271@gmail.com
+    If you want to discuss a new project don't hesitate to send me a message
   </p>
-  <form>
-
+  <form action="" method="">
+    <input class="w-100 my-2 form-inputs" type="text" id="name" name="name" placeholder="Name"><br>
+    <input class="w-100 my-2 form-inputs" type="email" id="email" name="email" placeholder="Email"><br>
+    <textarea class="w-100 my-2 form-message" name="message" id="message" rows="10">Please write your message...</textarea><br>
+    <input class="mx-auto black-project orange-bg p-2 border-0" type="submit" value="Submit"><br>
   </form>
-  <nav>
+  <nav class="m-0 text-menu-nav d-flex justify-content-between list-unstyled">
     <i class="fab fa-github"><a href="https://github.com/javierbotero"></a></i>
     <i class="fab fa-linkedin-in"><a href="https://www.linkedin.com/in/javierboterodev/"></a></i>
     <i class="fab fa-twitter"><a href="https://twitter.com/Javierboterodev"></a></i>
