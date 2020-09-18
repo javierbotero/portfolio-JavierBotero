@@ -25,6 +25,22 @@
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 10px 12px;
+}
+
+.menu-nav {
+  background: #3C3A39;
+}
+
+.text-menu-nav {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
 }
 
 .main-title {
@@ -35,6 +51,13 @@
 .about-me-title {
   font-size: 72px;
   line-height: 88px;
+}
+
+.bg-main-pic {
+  background-image: url("../pictures/workout.jpeg");
+  background-size: cover;
+  min-height: 300px;
+  background-position: center;
 }
 
 .black {
@@ -55,10 +78,12 @@
 
 .tag-bg-white {
   color: #091E42;
+  border: 1px solid #8993A4;
 }
 
 .tag-bg-black {
   color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.24);
 }
 
 .black-project {
@@ -93,16 +118,34 @@
   color: #091E42;
 }
 
-.degrade-project-scraper {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("../pictures/scraper-bot.png");
+.bg-pic-scraper {
+  background: url("../pictures/scraper-bot.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  z-index: -1;
 }
 
-.degrade-project-pets {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("../pictures/scraper-bot.png");
+.bg-pic-pets {
+  background: url("../pictures/scraper-bot.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  z-index: -1;
+}
+
+.degrade {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
 }
 
 .orange-bg {
   background-color: #FF6B00;
+}
+
+.projects-mini {
+  margin: 20px 0;
 }
 
 @media (min-width: 576px) {

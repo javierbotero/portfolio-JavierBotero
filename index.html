@@ -14,21 +14,20 @@
     <title>Javier Botero Portfolio</title>
 </head>
 <body class="text-break">
-
+  <nav class="menu-nav p-2">
+    <ul class="m-0 text-menu-nav d-flex justify-content-between list-unstyled">
+      <li>Javier Botero</li>
+      <li class="d-none d-sm-block">Portfolio</li>
+      <li class="d-none d-sm-block">About</li>
+      <li class="d-none d-sm-block"><i class="far fa-envelope"></i></li>
+      <li class="d-block d-sm-none"><i class="fas fa-bars"></i></li>
+    </ul>
+  </nav>
   <header class="bg-dark">
-    <nav>
-      <ul>
-        <li>Javier Botero</li>
-        <li class="d-none d-sm-block">Portfolio</li>
-        <li class="d-none d-sm-block">About</li>
-        <li class="d-none d-sm-block"><i class="far fa-envelope"></i></li>
-        <li class="d-block d-sm-none"><i class="fas fa-bars"></i></li>
-      </ul>
-    </nav>
     <div>
       <h1 class="main-title">Hi! I'm Javier</h1>
       <h5 class="title-black">I'm a Full Stack Web Developer</h5>
-      <p class="black">My stacks are Ruby on Rails, React & Redux, and WordPress, which means I could potentially collaborate in projects which are based on these stacks and languages, Ruby, Javascript, and PHP.</p>
+      <p class="black">My stacks are Ruby on Rails, React & Redux, and WordPress, I can potentially collaborate in projects based on these stacks and languages, Ruby, Javascript, and PHP.</p>
     </div>
     <nav>
       <i class="fab fa-github"><a href="https://github.com/javierbotero"></a></i>
@@ -52,14 +51,7 @@
       <hr>
     </div>
     <div>
-      <img srcset= "assets/pictures/workout-480w.jpg 400w,
-                    assets/pictures/workout-800w.jpg 800w,
-                    assets/pictures/workout-1000w.jpg 1000w"
-           sizes="(min-width 1000w) 1000w,
-                  (min_width 600px) 800w,
-                  480w"
-           src="assets/pictures/workout-800w.jpg"
-           alt="App project">
+      <div class="w-100 bg-main-pic"></div>
       <aside>
         <h3 class="subtitle-white">Workout project app</h3>
         <p class="white">
@@ -67,14 +59,14 @@
             articles about exercise or workout individually, in groups,
             indoors, or outdoors.
         </p>
-        <span class="tag-bg-white">Rails</span>
-        <span class="tag-bg-white">Ruby</span>
-        <span class="tag-bg-white">Bootstrap</span>
-        <span class="tag-bg-white">RSpec</span>
-        <span class="tag-bg-white">Cloudinary</span>
-        <button class="black-project orange-bg border-0" onclick="showProject(0)">See Project</button>
+        <span class="tag-bg-white my-1">Rails</span>
+        <span class="tag-bg-white my-1">Ruby</span>
+        <span class="tag-bg-white my-1">Bootstrap</span>
+        <span class="tag-bg-white my-1">RSpec</span>
+        <span class="tag-bg-white my-1">Cloudinary</span>
+        <button class="black-project orange-bg p-2 border-0 d-block" onclick="showProject(0)">See Project</button>
       </aside>
-      <section class="project">
+      <section class="project d-none">
         <h4 class="subtitle-white">WorkOut App Project</h4>
         <span class="tag">Rails</span>
         <span class="tag">Ruby</span>
@@ -95,27 +87,29 @@
       </section>
     </div>
     <div>
-      <div class="projects-mini">
-        <div class="degrade-project-scraper">
-          <h4 class="title-black-project">
+      <div class="projects-mini position-relative">
+        <div class="degrade">
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="p-3 pt-5">
+            <h4 class="title-black-project">
             Scraper-Bot
-          </h4>
-          <p class="black-project">
-            This is a Bot that scrapes all the products available in the page importacionesarturia.com
-          </p>
-          <span class="tag-bg-black">Ruby</span>
+            </h4>
+            <p class="black-project">
+              This is a Bot that scrapes all the products available in the page importacionesarturia.com
+            </p>
+            <span class="tag-bg-black mt-1">Ruby</span>
+          </div>
           <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(1)">See Project</div>
         </div>
-        <div class="w-100 h-100" onclick="showProject(1)">
-          <div class="orange-bg d-flex justify-content-center text-light py-2">See Project</div>
+        <div class="w-100 h-100 bg-pic-scraper d-flex flex-column-reverse" onclick="showProject(1)">
+          <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn">See Project</div>
         </div>
-        <section class="project">
-          <h4 class="title-black-project">WorkOut App Project</h4>
-          <span class="tag">Rails</span>
+        <section class="project d-none">
+          <h4 class="title-black-project">Scraper Bot</h4>
           <span class="tag">Ruby</span>
-          <span class="tag">Bootstrap</span>
-          <span class="tag">RSpec</span>
-          <span class="tag">Cloudinary</span>
           <img src="" alt="Scraper Bot">
           <div>
             <p class="black-project">
@@ -126,24 +120,31 @@
           </div>
         </section>
       </div>
-      <div class="projects-mini">
-        <div class="degrade-project">
-          <h4 class="title-black-project">
+      <div class="projects-mini position-relative">
+        <div class="degrade">
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="p-3 pt-5">
+            <h4 class="title-black-project">
             Pets Food
-          </h4>
-          <p class="black-project">
-            This is a pet food shopping website.
-          </p>
-          <span>Bootstrap</span>
-          <span>CSS</span>
-          <span>HTML</span>
-          <span>SASS</span>
+            </h4>
+            <p class="black-project">
+              This is a pet food shopping website.
+            </p>
+            <span class="tag-bg-black mt-1">Bootstrap</span>
+            <span class="tag-bg-black mt-1">CSS</span>
+            <span class="tag-bg-black mt-1">HTML</span>
+            <span class="tag-bg-black mt-1">SASS</span>
+          </div>
+          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(1)">See Project</div>
         </div>
-        <div class="" onclick="showProject(2)">
-          <div>See Project</div>
+        <div class="w-100 h-100 bg-pic-scraper d-flex flex-column-reverse" onclick="showProject(2)">
+          <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn">See Project</div>
         </div>
-        <section class="project">
-          <h4 class="title-black-project">WorkOut App Project</h4>
+        <section class="project d-none">
+          <h4 class="title-black-project">Pets Food Page Design</h4>
           <span class="tag">Rails</span>
           <span class="tag">Ruby</span>
           <span class="tag">Bootstrap</span>
@@ -159,22 +160,29 @@
           </div>
         </section>
       </div>
-      <div class="projects-mini">
-        <div class="degrade-project">
-          <h4 class="title-black-project">
+      <div class="projects-mini position-relative">
+        <div class="degrade">
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="p-3 pt-5">
+            <h4 class="title-black-project">
             Elsa Pachón Web Page
-          </h4>
-          <p class="black-project">
-            elsapachonmanager.com is a project for the Academy of Arts Sueños en Escena in Colombia.
-          </p>
-          <span>PHP</span>
-          <span>CSS</span>
-          <span>HTML</span>
+            </h4>
+            <p class="black-project">
+              elsapachonmanager.com is a project for the Academy of Arts Sueños en Escena in Colombia.
+            </p>
+            <span class="tag-bg-black mt-1">PHP</span>
+            <span class="tag-bg-black mt-1">CSS</span>
+            <span class="tag-bg-black mt-1">HTML</span>
+          </div>
+          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(1)">See Project</div>
         </div>
-        <div class="" onclick="showProject(3)">
-          <div>See Project</div>
+        <div class="w-100 h-100 bg-pic-scraper d-flex flex-column-reverse" onclick="showProject(3)">
+          <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn">See Project</div>
         </div>
-        <section class="project">
+        <section class="project d-none">
           <h4 class="title-black-project">WorkOut App Project</h4>
           <span class="tag">Rails</span>
           <span class="tag">Ruby</span>
@@ -191,22 +199,29 @@
           </div>
         </section>
       </div>
-      <div class="projects-mini">
-        <div class="degrade-project">
-          <h4 class="title-black-project">
+      <div class="projects-mini position-relative">
+        <div class="degrade">
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="p-3 pt-5">
+            <h4 class="title-black-project">
             Pointe Ballet School Web Page
-          </h4>
-          <p class="black-project">
-            pointeballetschool.com is a project for the Pointe Ballet Academy in Colombia.
-          </p>
-          <span>PHP</span>
-          <span>CSS</span>
-          <span>HTML</span>
+            </h4>
+            <p class="black-project">
+              pointeballetschool.com is a project for the Pointe Ballet Academy in Colombia.
+            </p>
+            <span class="tag-bg-black mt-1">PHP</span>
+            <span class="tag-bg-black mt-1">CSS</span>
+            <span class="tag-bg-black mt-1">HTML</span>
+          </div>
+          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(1)">See Project</div>
         </div>
-        <div class="" onclick="showProject(4)">
-          <div>See Project</div>
+        <div class="w-100 h-100 bg-pic-scraper d-flex flex-column-reverse" onclick="showProject(4)">
+          <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn">See Project</div>
         </div>
-        <section class="project">
+        <section class="project d-none">
           <h4 class="title-black-project">WorkOut App Project</h4>
           <span class="tag">Rails</span>
           <span class="tag">Ruby</span>
@@ -223,22 +238,29 @@
           </div>
         </section>
       </div>
-      <div class="projects-mini">
-        <div class="degrade-project">
-          <h4 class="title-black-project">
+      <div class="projects-mini position-relative">
+        <div class="degrade">
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="p-3 pt-5">
+            <h4 class="title-black-project">
             Pointe Ballet School Web Page
-          </h4>
-          <p class="black-project">
-            photographyandproductions.com is a self-employment project because my background is the filmmaking in Colombia.
-          </p>
-          <span>PHP</span>
-          <span>CSS</span>
-          <span>HTML</span>
+            </h4>
+            <p class="black-project">
+              photographyandproductions.com is a self-employment project because my background is the filmmaking in Colombia.
+            </p>
+            <span class="tag-bg-black mt-1">PHP</span>
+            <span class="tag-bg-black mt-1">CSS</span>
+            <span class="tag-bg-black mt-1">HTML</span>
+          </div>
+          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(1)">See Project</div>
         </div>
-        <div class="" onclick="showProject(5)">
-          <div>See Project</div>
+        <div class="w-100 h-100 bg-pic-scraper d-flex flex-column-reverse" onclick="showProject(5)">
+          <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn">See Project</div>
         </div>
-        <section class="project">
+        <section class="project d-none">
           <h4 class="title-black-project">WorkOut App Project</h4>
           <span class="tag">Rails</span>
           <span class="tag">Ruby</span>
@@ -255,22 +277,29 @@
           </div>
         </section>
       </div>
-      <div class="projects-mini">
-        <div class="degrade-project">
-          <h4 class="title-black-project">
+      <div class="projects-mini position-relative">
+        <div class="degrade">
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="p-3 pt-5">
+            <h4 class="title-black-project">
             Newsweek Clone Page
-          </h4>
-          <p class="black-project">
-            This is the clone page of the famous Newsweek page.
-          </p>
-          <span>PHP</span>
-          <span>CSS</span>
-          <span>HTML</span>
+            </h4>
+            <p class="black-project">
+              This is the clone page of the famous Newsweek page.
+            </p>
+            <span class="tag-bg-black mt-1">PHP</span>
+            <span class="tag-bg-black mt-1">CSS</span>
+            <span class="tag-bg-black mt-1">HTML</span>
+          </div>
+          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(1)">See Project</div>
         </div>
-        <div class="" onclick="showProject(6)">
-          <div>See Project</div>
+        <div class="w-100 h-100 bg-pic-scraper d-flex flex-column-reverse" onclick="showProject(6)">
+          <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn">See Project</div>
         </div>
-        <section class="project">
+        <section class="project d-none">
           <h4 class="title-black-project">WorkOut App Project</h4>
           <span class="tag">Rails</span>
           <span class="tag">Ruby</span>
