@@ -1,0 +1,152 @@
+$orange-bg: #FF6B00;
+
+%black-bg-styles {
+  background: #1C1A19;
+  position: absolute;
+}
+
+%orange-title {
+  color: #FF6B00;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.37px;
+  flex: none;
+  order: 0;
+  align-self: center;
+}
+
+%white-font {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+%text-one {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+%tag {
+  @extend %text-one;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+@mixin bg-projects($url){
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%,
+                              rgba(38, 38, 38, 0.9) 61.94%),
+                              url($url);
+}
+
+.main-title {
+  @extend %orange-title;
+  font-size: 56px;
+  line-height: 64px;
+}
+
+.about-me-title {
+  @extend %orange-title;
+  font-size: 72px;
+  line-height: 88px;
+}
+
+.black {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.white {
+  @extend %text-one;
+  color: #091E42;
+  flex: none;
+  order: 1;
+  align-self: center;
+}
+
+.tag-bg-white {
+  @extend %tag;
+  color: #091E42;
+}
+
+.tag-bg-black {
+  @extend %tag;
+  color: #FFFFFF;
+}
+
+.black-project {
+  @extend %text-one;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.title-black {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFF5E1;
+}
+
+.title-black-project {
+  @extend %white-font;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+.title-white {
+  @extend %white-font;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.subtitle-white {
+  @extend %white-font;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091E42;
+}
+
+.degrade-project-scraper {
+  @include bg-projects("../pictures/scraper-bot.png")
+}
+
+.degrade-project-pets {
+  @include bg-projects("../pictures/scraper-bot.png")
+}
+
+.orange-bg {
+  background-color: $orange-bg;
+}
+
+@media (min-width: 576px) {
+  .main-title, .about-me-title {
+    font-size: 72px;
+    line-height: 81px;
+  }
+
+  .black {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .title-black {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .subtitle-white {
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
