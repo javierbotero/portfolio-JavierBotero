@@ -202,18 +202,18 @@
 
   <nav class="menu-nav p-2">
     <ul class="m-0 text-menu-nav d-flex justify-content-between list-unstyled">
-      <li>Javier Botero</li>
-      <li class="d-none d-sm-block">Portfolio</li>
-      <li class="d-none d-sm-block">About</li>
-      <li class="d-none d-sm-block"><i class="far fa-envelope"></i></li>
-      <li class="d-block d-sm-none"><i class="fas fa-bars"></i></li>
+      <li><a class="text-light" href="#javier">Javier Botero</a></li>
+      <li class="d-none d-sm-block"><a class="text-light" href="#portfolio">Portfolio</a></li>
+      <li class="d-none d-sm-block"><a class="text-light" href="#me">About Me</a></li>
+      <li class="d-none d-sm-block"><a class="text-light" href="#message"><i class="far fa-envelope"></a></i></li>
+      <li onclick="menu()" class="d-block d-sm-none"><i class="fas fa-bars"></i></li>
     </ul>
   </nav>
   <header class="bg-dark pt-5 px-3">
     <br>
     <br>
     <div>
-      <h1 class="main-title">Hi! I'm Javier</h1>
+      <h1 id="javier" class="main-title">Hi! I'm Javier</h1>
       <h5 class="title-black">I'm a Full Stack Web Developer</h5>
       <p class="black m-0">My stacks are Ruby on Rails, React & Redux, and WordPress, I can potentially collaborate in projects based on these stacks and languages, Ruby, Javascript, and PHP.</p>
       <nav class="text-light d-flex justify-content-around pt-3">
@@ -240,7 +240,7 @@
     <br>
     <br>
     <br>
-    <div>
+    <div id="portfolio">
       <h5 class="title-white">My latest Works</h5>
       <hr>
     </div>
@@ -409,7 +409,7 @@
       <br>
       <br>
       <br>
-      <div>
+      <div id="me">
         <h3 class="main-title py-4">About me</h3>
         <p class="black-project pb-3">
             I consider myself a person interested in constant self-improvement
@@ -479,7 +479,7 @@
   <p>
     If you want to discuss a new project don't hesitate to send me a message
   </p>
-  <form action="" method="">
+  <form id="message" action="" method="">
     <input class="w-100 my-2 form-inputs" type="text" id="name" name="name" placeholder="Name"><br>
     <input class="w-100 my-2 form-inputs" type="email" id="email" name="email" placeholder="Email"><br>
     <textarea class="w-100 my-2 form-message" name="message" id="message" rows="10">Please write your message...</textarea><br>

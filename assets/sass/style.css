@@ -196,6 +196,41 @@
   min-height: 300vh;
 }
 
+.menu-position {
+  top: 0;
+  left: 5%;
+  background: #3C3A39;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.menu-position ul {
+  list-style-type: none;
+}
+
+.menu-position div {
+  color: #FFF5E1;
+  font-weight: 700;
+  font-size: larger;
+  text-align: right;
+}
+
+.menu-position ul li {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #FFF5E1;
+}
+
+.menu-position ul li a {
+  color: #FFF5E1;
+}
+
 @media (min-width: 576px) {
   .main-title, .about-me-title {
     font-size: 72px;
