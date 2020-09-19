@@ -1,10 +1,16 @@
-var slide = document.getElementsByClassName("project");
+var slides = document.getElementsByClassName("project");
+var projects = document.getElementsByClassName("projects");
 
 
 function showProject(n) {
-  slide[n].className = slide[n].className.replace("d-none", "d-flex");
+  slides[n].className = slides[n].className.replace("d-none", "d-flex");
+  projects[0].className = projects[0].className.replace("d-none", "d-block");
+  window.scrollTo(0, 0);
 }
 
 function hideProject(n) {
-  slide[n].className = slide[n].className.replace("d-flex", "d-none");
+  console.log(slides[n]);
+  slides[n].className = slides[n].className.replace("d-flex", "d-none");
+  projects[0].className = projects[0].className.replace("d-block", "d-none");
+  document.getElementById(n).scrollIntoView();
 }

@@ -216,13 +216,13 @@ $roboto: 'Roboto', sans-serif;
 
 .project {
   flex-direction: column;
-  padding: 16px;
   position: absolute;
-  left: calc(50% - 343px/2);
-  top: 60px;
+  left: 0;
+  top: 0;
+  max-width: 100%;
   background: #FFFFFF;
-  border: 1px solid #DFE1E6;
   box-sizing: border-box;
+  min-height: 300vh;
 }
 
 @media (min-width: 576px) {
