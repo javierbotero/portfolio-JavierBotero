@@ -87,7 +87,7 @@ $roboto: 'Roboto', sans-serif;
 .bg-main-pic {
   background-image: url("../pictures/workout.jpeg");
   background-size: cover;
-  min-height: 300px;
+  min-height: 500px;
   background-position: center;
   border-left: 1em solid white;
   border-right: 1em solid white;
@@ -297,7 +297,6 @@ $roboto: 'Roboto', sans-serif;
   max-width: 100%;
   background: #FFFFFF;
   box-sizing: border-box;
-  min-height: 300vh;
   z-index: 10;
 }
 
@@ -488,5 +487,13 @@ $roboto: 'Roboto', sans-serif;
 
   header, .me-description {
     min-height: 100vh;
+  }
+
+  .project {
+    margin: 0 10%;
+  }
+
+  .btn-space {
+    margin: 0 5%;
   }
 }
