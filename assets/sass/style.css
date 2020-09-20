@@ -72,6 +72,60 @@
   border-right: 1em solid white;
 }
 
+.bg-pic-main-scraper {
+  background-image: url("../pictures/scraper-bot.png");
+  background-size: cover;
+  min-height: 300px;
+  background-position: center;
+  border-left: 1em solid white;
+  border-right: 1em solid white;
+}
+
+.bg-pic-main-pets {
+  background-image: url("../pictures/PetPage.jpg");
+  background-size: cover;
+  min-height: 300px;
+  background-position: center;
+  border-left: 1em solid white;
+  border-right: 1em solid white;
+}
+
+.bg-pic-main-elsa {
+  background-image: url("../pictures/elsa.jpg");
+  background-size: cover;
+  min-height: 300px;
+  background-position: center;
+  border-left: 1em solid white;
+  border-right: 1em solid white;
+}
+
+.bg-pic-main-pointe {
+  background-image: url("../pictures/pointe.jpg");
+  background-size: cover;
+  min-height: 300px;
+  background-position: center;
+  border-left: 1em solid white;
+  border-right: 1em solid white;
+}
+
+.bg-pic-main-photo {
+  background-image: url("../pictures/photo.jpg");
+  background-size: cover;
+  min-height: 300px;
+  background-position: center;
+  border-left: 1em solid white;
+  border-right: 1em solid white;
+}
+
+.bg-pic-main-news {
+  background-image: url("../pictures/news.jpg");
+  background-size: cover;
+  min-height: 300px;
+  background-position: center;
+  border-left: 1em solid white;
+  border-right: 1em solid white;
+}
+
 .black {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -140,7 +194,43 @@
 }
 
 .bg-pic-pets {
-  background: url("../pictures/scraper-bot.png");
+  background: url("../pictures/PetPage.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  z-index: -1;
+}
+
+.bg-pic-elsa {
+  background: url("../pictures/elsa.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  z-index: -1;
+}
+
+.bg-pic-pointe {
+  background: url("../pictures/pointe.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  z-index: -1;
+}
+
+.bg-pic-photo {
+  background: url("../pictures/photo.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  z-index: -1;
+}
+
+.bg-pic-news {
+  background: url("../pictures/news.jpg");
   position: absolute;
   top: 0;
   left: 0;
@@ -150,6 +240,7 @@
 
 .degrade {
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+  height: 100%;
 }
 
 .orange-bg {
@@ -198,6 +289,7 @@
   background: #FFFFFF;
   box-sizing: border-box;
   min-height: 300vh;
+  z-index: 10;
 }
 
 .menu-position {
@@ -258,7 +350,7 @@
   bottom: 21.05%;
   background: #FFFFFF;
   border: 1.22338px solid #262626;
-  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+  transform: matrix(1.04, 0.27, 0.27, 0.96, 0, 0);
   width: 110.4px;
   height: 114.31px;
 }
@@ -271,20 +363,8 @@
   bottom: 9.36%;
   background: #FFFFFF;
   border: 1.22338px solid #FF6B00;
-  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+  transform: matrix(-0.96, -0.73, -40.73, 0.96, 0, 0);
   width: 30%;
-  height: 20%;
-}
-
-.three {
-  position: absolute;
-  left: 61.82%;
-  right: 30.94%;
-  top: 31.32%;
-  bottom: 59.14%;
-  background: #FF6B00;
-  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
-  width: 20%;
   height: 20%;
 }
 
@@ -296,7 +376,7 @@
   bottom: 17.41%;
   background: #FFFFFF;
   border: 1.22338px solid #262626;
-  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+  transform: matrix(-5.96, 1.27, 12.27, 0.96, 0, 0);
 }
 
 .five {
@@ -318,7 +398,7 @@
   bottom: -6.38%;
   background: #FFFFFF;
   border: 1.22338px solid #FF6B00;
-  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+  transform: matrix(0.04, -4.73, 21.27, -20.04, 0, 0);
 }
 
 .seven {
@@ -329,7 +409,7 @@
   bottom: 11.09%;
   background: #FFFFFF;
   border: 1.22338px solid #262626;
-  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+  transform: matrix(0.04, 15.27, 22.27, -25.04, 27, 49);
 }
 
 .one-a {
@@ -365,6 +445,14 @@
   background: #FFFFFF;
   border: 1.22338px solid #262626;
   transform: matrix(-5.96, -2.73, -35.73, 16.96, 0, 0);
+}
+
+.overlay-top {
+  z-index: 10;
+}
+
+.cursor-custom {
+  cursor: pointer;
 }
 
 @media (min-width: 576px) {

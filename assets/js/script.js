@@ -1,6 +1,7 @@
 var slides = document.getElementsByClassName("project");
 var projects = document.getElementsByClassName("projects");
-
+var hovers = document.getElementsByClassName("hover-projects");
+var buttonsHovers = document.getElementsByClassName("switcher-btn");
 
 function showProject(n) {
   slides[n].className = slides[n].className.replace("d-none", "d-flex");
@@ -23,6 +24,7 @@ function menu() {
   var menu = document.createElement("ul");
   var close = document.createElement("div");
   close.innerHTML = "X";
+  close.setAttribute("class", "custom-cursor");
   close.setAttribute("onclick", "removeMenu()");
   container.appendChild(close);
   var javier = document.createElement("li");
@@ -47,4 +49,14 @@ function removeMenu() {
   if(container) {
     document.body.removeChild(container);
   }
+}
+
+function displayProjects(n) {
+  hovers[n].classList.add("overlay-top");
+  buttonsHovers[n].classList.replace("d-none", "d-flex");
+}
+
+function hideProjects(n) {
+  hovers[n].classList.remove("overlay-top");
+  buttonsHovers[n].classList.replace("d-flex", "d-none");
 }
