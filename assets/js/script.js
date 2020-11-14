@@ -3,20 +3,20 @@ var projects = document.getElementsByClassName("projects");
 var hovers = document.getElementsByClassName("hover-projects");
 var buttonsHovers = document.getElementsByClassName("switcher-btn");
 
-function showProject(n) {
+const showProject = (n) => {
   slides[n].className = slides[n].className.replace("d-none", "d-flex");
   projects[0].className = projects[0].className.replace("d-none", "d-block");
   window.scrollTo(0, 0);
 }
 
-function hideProject(n) {
+const hideProject = (n) => {
   console.log(slides[n]);
   slides[n].className = slides[n].className.replace("d-flex", "d-none");
   projects[0].className = projects[0].className.replace("d-block", "d-none");
   document.getElementById(n).scrollIntoView();
 }
 
-function menu() {
+const menu = () => {
   var container = document.createElement("div");
   container.setAttribute("id", "container");
   container.setAttribute("class", "position-absolute");
@@ -44,19 +44,19 @@ function menu() {
   document.body.appendChild(container);
 }
 
-function removeMenu() {
+const removeMenu = () => {
   var container = document.getElementById("container");
   if(container) {
     document.body.removeChild(container);
   }
 }
 
-function displayProjects(n) {
+const displayProjects = (n) => {
   hovers[n].classList.add("overlay-top");
   buttonsHovers[n].classList.replace("d-none", "d-flex");
 }
 
-function hideProjects(n) {
+const hideProjects = (n) => {
   hovers[n].classList.remove("overlay-top");
   buttonsHovers[n].classList.replace("d-flex", "d-none");
 }
