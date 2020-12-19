@@ -139,8 +139,8 @@ $roboto: 'Roboto', sans-serif;
   border-right: 1em solid white;
 }
 
-.bg-pic-main-pointe {
-  background-image: url("../pictures/pointe.jpg");
+.bg-pic-main-aurora {
+  background-image: url("../pictures/game.png");
   background-size: cover;
   min-height: 300px;
   background-position: center;
@@ -233,8 +233,8 @@ $roboto: 'Roboto', sans-serif;
   @include bg-projects("../pictures/slides.png");
 }
 
-.bg-pic-pointe {
-  @include bg-projects("../pictures/pointe.jpg");
+.bg-pic-aurora {
+  @include bg-projects("../pictures/game.png.");
 }
 
 .degrade {
