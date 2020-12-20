@@ -10,7 +10,6 @@ const showProject = (n) => {
 }
 
 const hideProject = (n) => {
-  console.log(slides[n]);
   slides[n].className = slides[n].className.replace("d-flex", "d-none");
   projects[0].className = projects[0].className.replace("d-block", "d-none");
   document.getElementById(n).scrollIntoView();
@@ -53,6 +52,7 @@ const removeMenu = () => {
 
 const displayProjects = (n) => {
   hovers[n].classList.add("overlay-top");
+  console.log(hovers);
   buttonsHovers[n].classList.replace("d-none", "d-flex");
 }
 

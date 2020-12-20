@@ -234,7 +234,7 @@ $roboto: 'Roboto', sans-serif;
 }
 
 .bg-pic-aurora {
-  @include bg-projects("../pictures/game.png.");
+  @include bg-projects("../pictures/game.png");
 }
 
 .degrade {
