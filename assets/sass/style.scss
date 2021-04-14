@@ -86,7 +86,7 @@ $roboto: 'Roboto', sans-serif;
 }
 
 .bg-main-pic {
-  background-image: url("../pictures/workout.jpeg");
+  background-image: url("../pictures/fun.png");
   background-size: cover;
   min-height: 500px;
   background-position: center;
@@ -121,8 +121,8 @@ $roboto: 'Roboto', sans-serif;
   border-right: 1em solid white;
 }
 
-.bg-pic-main-todo-list {
-  background-image: url("../pictures/todos.png");
+.bg-pic-main-bookstore {
+  background-image: url("../pictures/bookstore.png");
   background-size: cover;
   min-height: 300px;
   background-position: center;
@@ -130,8 +130,8 @@ $roboto: 'Roboto', sans-serif;
   border-right: 1em solid white;
 }
 
-.bg-pic-main-slides {
-  background-image: url("../pictures/slides.png");
+.bg-pic-main-workout {
+  background-image: url("../pictures/workout.jpeg");
   background-size: cover;
   min-height: 300px;
   background-position: center;
@@ -225,12 +225,12 @@ $roboto: 'Roboto', sans-serif;
   @include bg-projects("../pictures/elsa.jpg");
 }
 
-.bg-pic-todos {
-  @include bg-projects("../pictures/todos.png");
+.bg-pic-bookstore {
+  @include bg-projects("../pictures/bookstore.png");
 }
 
-.bg-pic-slides {
-  @include bg-projects("../pictures/slides.png");
+.bg-pic-workout {
+  @include bg-projects("../pictures/workout.jpeg");
 }
 
 .bg-pic-aurora {

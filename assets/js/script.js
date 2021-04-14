@@ -52,7 +52,6 @@ const removeMenu = () => {
 
 const displayProjects = (n) => {
   hovers[n].classList.add("overlay-top");
-  console.log(hovers);
   buttonsHovers[n].classList.replace("d-none", "d-flex");
 }
 
