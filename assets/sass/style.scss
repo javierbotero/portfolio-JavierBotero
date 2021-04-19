@@ -65,7 +65,7 @@ $roboto: 'Roboto', sans-serif;
 }
 
 .text-menu-nav {
-  font-family: $roboto;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -295,7 +295,7 @@ $roboto: 'Roboto', sans-serif;
   position: absolute;
   left: 0;
   top: 0;
-  max-width: 100%;
+  width: 100%;
   background: #FFFFFF;
   box-sizing: border-box;
   z-index: 10;
@@ -488,10 +488,6 @@ $roboto: 'Roboto', sans-serif;
 
   header, .me-description {
     min-height: 100vh;
-  }
-
-  .project {
-    margin: 0 10%;
   }
 
   .btn-space {

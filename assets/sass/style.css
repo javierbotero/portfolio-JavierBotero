@@ -38,7 +38,7 @@
   background: #3C3A39; }
 
 .text-menu-nav {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -251,7 +251,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  max-width: 100%;
+  width: 100%;
   background: #FFFFFF;
   box-sizing: border-box;
   z-index: 10; }
@@ -422,9 +422,6 @@
 
   header, .me-description {
     min-height: 100vh; }
-
-  .project {
-    margin: 0 10%; }
 
   .btn-space {
     margin: 0 5%; } }
