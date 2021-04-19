@@ -221,7 +221,7 @@
 
 .projects-mini {
   margin: 20px 0;
-  flex-basis: 30%;
+  flex-basis: 45%;
   margin: 1%; }
 
 .diamond {
@@ -402,6 +402,14 @@
 .cursor-custom {
   cursor: pointer; }
 
+.dimmer {
+  background-color: #262626;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 5;
+  opacity: 0.9; }
+
 @media (min-width: 576px) {
   .main-title, .about-me-title {
     font-size: 72px;
@@ -424,6 +432,27 @@
     min-height: 100vh; }
 
   .btn-space {
-    margin: 0 5%; } }
+    margin: 0 5%; }
+
+  .project {
+    padding: 0 2em 2em 2em; }
+
+  .projects-container {
+    padding: 0 2em; } }
+@media (min-width: 800px) {
+  .project {
+    padding: 0 4em 4em 4em; }
+
+  .projects-container {
+    padding: 0 4em; }
+
+  .projects-mini {
+    flex-basis: 30%; } }
+@media (min-width: 1200px) {
+  .projects-container {
+    padding: 0 8em; }
+
+  .project {
+    padding: 3em 6em 6em 6em; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,17 +1,20 @@
-var slides = document.getElementsByClassName("project");
-var projects = document.getElementsByClassName("projects");
-var hovers = document.getElementsByClassName("hover-projects");
-var buttonsHovers = document.getElementsByClassName("switcher-btn");
+const slides = document.getElementsByClassName("project");
+const projects = document.getElementsByClassName("projects");
+const hovers = document.getElementsByClassName("hover-projects");
+const buttonsHovers = document.getElementsByClassName("switcher-btn");
+const noDimmer = () => document.getElementById('no-dimmer');
 
 const showProject = (n) => {
   slides[n].className = slides[n].className.replace("d-none", "d-flex");
   projects[0].className = projects[0].className.replace("d-none", "d-block");
+  noDimmer().classList.add('dimmer');
   window.scrollTo(0, 0);
 }
 
 const hideProject = (n) => {
   slides[n].className = slides[n].className.replace("d-flex", "d-none");
   projects[0].className = projects[0].className.replace("d-block", "d-none");
+  noDimmer().classList.remove('dimmer')
   document.getElementById(n).scrollIntoView();
 }
 
