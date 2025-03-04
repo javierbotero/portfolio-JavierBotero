@@ -86,7 +86,7 @@ $roboto: 'Roboto', sans-serif;
 }
 
 .bg-main-pic {
-  background-image: url("../pictures/fun.png");
+  background-image: url("../pictures/elsa.png");
   background-size: cover;
   min-height: 500px;
   background-position: center;
@@ -112,8 +112,8 @@ $roboto: 'Roboto', sans-serif;
   border-right: 1em solid white;
 }
 
-.bg-pic-main-elsa {
-  background-image: url("../pictures/elsa.jpg");
+.bg-pic-main-fun {
+  background-image: url("../pictures/fun.png");
   background-size: cover;
   min-height: 300px;
   background-position: center;
@@ -130,8 +130,8 @@ $roboto: 'Roboto', sans-serif;
   border-right: 1em solid white;
 }
 
-.bg-pic-main-workout {
-  background-image: url("../pictures/workout.jpeg");
+.bg-pic-main-aurora {
+  background-image: url("../pictures/game.png");
   background-size: cover;
   min-height: 300px;
   background-position: center;
@@ -139,8 +139,8 @@ $roboto: 'Roboto', sans-serif;
   border-right: 1em solid white;
 }
 
-.bg-pic-main-aurora {
-  background-image: url("../pictures/game.png");
+.bg-pic-main-elsa {
+  background-image: url("../pictures/elsa.png");
   background-size: cover;
   min-height: 300px;
   background-position: center;
@@ -221,8 +221,8 @@ $roboto: 'Roboto', sans-serif;
   @include bg-projects("../pictures/PetPage.jpg");
 }
 
-.bg-pic-elsa {
-  @include bg-projects("../pictures/elsa.jpg");
+.bg-pic-fun {
+  @include bg-projects("../pictures/fun.png");
 }
 
 .bg-pic-bookstore {

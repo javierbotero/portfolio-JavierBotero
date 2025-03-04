@@ -1,3 +1,22 @@
+<!-- JS -->
+
+<!-- Functions displayProjects(n) and hideProjects(n) are for the degrade layer over the cards
+ those are with lesser numbers, due to are not the main card (artistasparalavida project).
+ Functions showProject(n) and hideProject(n) are for go to the top and display the hidden card, then
+ to take the user back to the id=n, these n are +1 index due to all these hidden cards (sections)
+ are all the same in the top -->
+
+ <!-- SASS -->
+
+<!-- To transpile from sass to css just run `sass assets/sass/style.scss assets/sass/style.cs` 
+ this is for any change in a picture or fix of a class -->
+
+<!-- Main CSS classes -->
+
+<!-- The .tag-bg-white and tag-bg-black are for the little tags like Ruby on Rails pictures 
+ so if the picture is white use .tag-bg-white so everything displays well -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,32 +64,63 @@
 </head>
 <body class="text-break">
   <div id="no-dimmer"></div>
+
+  <!-- These are the cards projects, are hidden by default, so when user clicks any of these it displays -->
   <section class="position-relative d-none projects">
     <section class="project d-none">
       <br>
       <br>
       <br>
       <div class="d-flex px-3">
-        <h4 class="subtitle-white flex-grow-1 align-self-center">WorkOut App Project</h4>
+        <h4 class="subtitle-white flex-grow-1 align-self-center">Artistas para la Vida Platform</h4>
         <div onclick="hideProject(0)" class="align-self-center pl-5 font-weight-bold cursor-custom">X</div>
       </div>
       <br>
       <div class="px-3">
-        <span class="tag-bg-white p-2 mb-1">Rails</span>
-        <span class="tag-bg-white p-2 mb-1">Ruby</span>
-        <span class="tag-bg-white p-2 mb-1">Bootstrap</span>
-        <span class="tag-bg-white p-2 mb-1">RSpec</span>
-        <span class="tag-bg-white p-2 mb-1">Cloudinary</span>
+        <span class="tag-bg-white p-2 mb-1">Ruby on Rails</span>
+        <span class="tag-bg-white p-2 mb-1">Spree</span>
+        <span class="tag-bg-white p-2 mb-1">Docker Compose</span>
+        <span class="tag-bg-white p-2 mb-1">Stimulus JS</span>
       </div>
       <div class="row py-5 px-0 m-0">
-        <div class="col-sm-6 w-75 mb-4 bg-pic-main-workout mx-3"></div>
+        <div class="col-sm-6 w-75 mb-4 bg-pic-main-elsa mx-3"></div>
         <div class="col-sm-5 d-sm-flex align-items-start flex-column">
           <p class="px-3 mb-auto">
-            This project was built for the Microverse Ruby on Rails capstone project and is based on the Lifestyle Articles website template. Users can write and share articles about exercise and workouts of all types.
+            <a href="https://www.artistasparalavida.com/" target="_blank">artistasparalavida.com</a> is a project for the Colombian Artists and entertainment industry. I designed this page using Ruby on Rails containerized using Docker compose.
           </p>
           <div class="d-flex flex-column flex-lg-row justify-content-around p-4 w-100">
-            <a class="black-project mt-1 orange-bg p-2 btn-space" href="https://stark-harbor-31329.herokuapp.com/" target="_blank">Live<i class="ml-1 fas fa-power-off"></i></a>
-            <a class="black-project mt-1 orange-bg p-2 btn-space" href="https://github.com/javierbotero/workout" target="_blank">See Source<i class="ml-1 fab fa-github"></i></a>
+            <a class="black-project mt-1 orange-bg p-2 btn-space" href="https://www.artistasparalavida.com/" target="_blank">Live<i class="ml-1 fas fa-power-off"></i></a>
+            <a class="black-project mt-1 orange-bg p-2 btn-space" href="https://github.com/javierbotero/Elsa-Pachon-Child-Theme" target="_blank">See Source<i class="ml-1 fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="project d-none">
+      <br>
+      <br>
+      <br>
+      <div class="d-flex px-3">
+        <h4 class="subtitle-white flex-grow-1 align-self-center">Fun Courses</h4>
+        <div onclick="hideProject(1)" class="align-self-center pl-5 font-weight-bold cursor-custom">X</div>
+      </div>
+      <br>
+      <div class="px-3">
+        <span class="tag-bg-white p-2 mb-1">Ruby on Rails</span>
+        <span class="tag-bg-white p-2 mb-1">React</span>
+        <span class="tag-bg-white p-2 mb-1">Redux</span>
+        <span class="tag-bg-white p-2 mb-1">Jest</span>
+        <span class="tag-bg-white p-2 mb-1">RSpec</span>
+      </div>
+      <div class="row py-5 px-0 m-0">
+        <div class="col-sm-6 w-75 mb-4 bg-pic-main-fun mx-3"></div>
+        <div class="col-sm-5 d-sm-flex align-items-start flex-column">
+          <p class="px-3 mb-auto">
+            <a href="https://funcourses.netlify.app/" target="_blank">Fun Courses</a> is a courses web app. The user can create, like, and subscribe to courses, and can friend other users as well.
+          </p>
+          <div class="d-flex flex-column flex-lg-row justify-content-around p-4 w-100">
+            <a class="black-project mt-1 orange-bg p-2 btn-space" href="https://funcourses.netlify.app/" target="_blank">Live<i class="ml-1 fas fa-power-off"></i></a>
+            <a class="black-project mt-1 orange-bg p-2 btn-space" href="https://github.com/javierbotero/FunCourses" target="_blank">Front-end Source<i class="ml-1 fab fa-github"></i></a>
+            <a class="black-project mt-1 orange-bg p-2 btn-space" href="https://github.com/javierbotero/APIfuncourses" target="_blank">Back-end Source<i class="ml-1 fab fa-github"></i></a>
           </div>
         </div>
       </div>
@@ -81,7 +131,7 @@
       <br>
       <div class="d-flex px-3">
         <h4 class="subtitle-white flex-grow-1 align-self-center">Scraper Bot</h4>
-        <div onclick="hideProject(1)" class="align-self-center pl-5 font-weight-bold cursor-custom">X</div>
+        <div onclick="hideProject(2)" class="align-self-center pl-5 font-weight-bold cursor-custom">X</div>
       </div>
       <br>
       <div class="px-3">
@@ -106,7 +156,7 @@
       <br>
       <div class="d-flex px-3">
         <h4 class="subtitle-white flex-grow-1 align-self-center">Pets Food Page Design</h4>
-        <div onclick="hideProject(2)" class="align-self-center pl-5 font-weight-bold cursor-custom">X</div>
+        <div onclick="hideProject(3)" class="align-self-center pl-5 font-weight-bold cursor-custom">X</div>
       </div>
       <br>
       <div class="px-3">
@@ -124,34 +174,6 @@
           <div class="d-flex flex-column flex-lg-row justify-content-around p-4 w-100">
             <a class="black-project mt-1 orange-bg p-2 btn-space" href="https://javierbotero.github.io/PetsFood/" target="_blank">Live<i class="ml-1 fas fa-power-off"></i></a>
             <a class="black-project mt-1 orange-bg p-2 btn-space" href="https://github.com/javierbotero/PetsFood" target="_blank">See Source<i class="ml-1 fab fa-github"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="project d-none">
-      <br>
-      <br>
-      <br>
-      <div class="d-flex px-3">
-        <h4 class="subtitle-white flex-grow-1 align-self-center">Elsa Pachón webpage</h4>
-        <div onclick="hideProject(3)" class="align-self-center pl-5 font-weight-bold cursor-custom">X</div>
-      </div>
-      <br>
-      <div class="px-3">
-        <span class="tag-bg-white p-2 mb-1">PHP</span>
-        <span class="tag-bg-white p-2 mb-1">CSS</span>
-        <span class="tag-bg-white p-2 mb-1">JavaScript</span>
-        <span class="tag-bg-white p-2 mb-1">Wordpress</span>
-      </div>
-      <div class="row py-5 px-0 m-0">
-        <div class="col-sm-6 w-75 mb-4 bg-pic-main-elsa mx-3"></div>
-        <div class="col-sm-5 d-sm-flex align-items-start flex-column">
-          <p class="px-3 mb-auto">
-            <a href="https://www.elsapachonmanager.com/" target="_blank">elsapachonmanager.com</a> is a project for the Colombian Arts Academy  Sueños en Escena. I designed this page using WordPress, PHP, CSS, and JavaScript.
-          </p>
-          <div class="d-flex flex-column flex-lg-row justify-content-around p-4 w-100">
-            <a class="black-project mt-1 orange-bg p-2 btn-space" href="https://www.elsapachonmanager.com/" target="_blank">Live<i class="ml-1 fas fa-power-off"></i></a>
-            <a class="black-project mt-1 orange-bg p-2 btn-space" href="https://github.com/javierbotero/Elsa-Pachon-Child-Theme" target="_blank">See Source<i class="ml-1 fab fa-github"></i></a>
           </div>
         </div>
       </div>
@@ -189,38 +211,8 @@
       <br>
       <br>
       <div class="d-flex px-3">
-        <h4 class="subtitle-white flex-grow-1 align-self-center">Fun Courses</h4>
-        <div onclick="hideProject(5)" class="align-self-center pl-5 font-weight-bold cursor-custom">X</div>
-      </div>
-      <br>
-      <div class="px-3">
-        <span class="tag-bg-white p-2 mb-1">Ruby on Rails</span>
-        <span class="tag-bg-white p-2 mb-1">React</span>
-        <span class="tag-bg-white p-2 mb-1">Redux</span>
-        <span class="tag-bg-white p-2 mb-1">Jest</span>
-        <span class="tag-bg-white p-2 mb-1">RSpec</span>
-      </div>
-      <div class="row py-5 px-0 m-0">
-        <div class="col-sm-6 w-75 mb-4 bg-main-pic mx-3"></div>
-        <div class="col-sm-5 d-sm-flex align-items-start flex-column">
-          <p class="px-3 mb-auto">
-            <a href="https://funcourses.netlify.app/" target="_blank">Fun Courses</a> is a courses web app. The user can create, like, and subscribe to courses, and can friend other users as well.
-          </p>
-          <div class="d-flex flex-column flex-lg-row justify-content-around p-4 w-100">
-            <a class="black-project mt-1 orange-bg p-2 btn-space" href="https://funcourses.netlify.app/" target="_blank">Live<i class="ml-1 fas fa-power-off"></i></a>
-            <a class="black-project mt-1 orange-bg p-2 btn-space" href="https://github.com/javierbotero/FunCourses" target="_blank">Front-end Source<i class="ml-1 fab fa-github"></i></a>
-            <a class="black-project mt-1 orange-bg p-2 btn-space" href="https://github.com/javierbotero/APIfuncourses" target="_blank">Back-end Source<i class="ml-1 fab fa-github"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="project d-none">
-      <br>
-      <br>
-      <br>
-      <div class="d-flex px-3">
         <h4 class="subtitle-white flex-grow-1 align-self-center">Aurora the Adventurer RPG game</h4>
-        <div onclick="hideProject(6)" class="align-self-center pl-5 font-weight-bold cursor-custom">X</div>
+        <div onclick="hideProject(5)" class="align-self-center pl-5 font-weight-bold cursor-custom">X</div>
       </div>
       <br>
       <div class="px-3">
@@ -244,6 +236,8 @@
     </section>
   </section>
 
+  <!-- Portfolio starts here -->
+
   <nav class="menu-nav py-2 px-4">
     <ul class="m-0 text-menu-nav d-flex list-unstyled">
       <li class="mr-auto"><a class="text-light" href="#javier">Javier Botero</a></li>
@@ -259,8 +253,8 @@
     <div class="col-sm-6">
       <br>
       <h1 id="javier" class="main-title">Hi! I'm Javier</h1>
-      <h5 class="title-black">I'm a Full Stack Web Developer</h5>
-      <p class="black m-0">My main stack is Ruby on Rails, React & Redux, and WordPress, and I can potentially collaborate on projects based on Ruby and JavaScript.</p>
+      <h5 class="title-black">I'm a Full Stack Web Developer and AI engineer learner</h5>
+      <p class="black m-0">My main stack is Ruby on Rails, Tensorflow, React & Redux, and NextJS. I can potentially collaborate on projects based on these technologies.</p>
       <nav class="text-light d-flex justify-content-around pt-3">
         <a href="https://github.com/javierbotero" class="text-light" target="_blank"><i class="ml-1 fab fa-github"></i></a></i>
         <a href="https://www.linkedin.com/in/javierboterodev/" class="text-light" target="_blank"><i class="ml-1 fab fa-linkedin-in"></i></a></i>
@@ -290,25 +284,48 @@
     </div>
     <br>
     <br>
-    <div id="5" class="row p-0 m-0">
+    <div id="0" class="row p-0 m-0">
       <div class="col-sm-1"></div>
       <div class="w-100 bg-main-pic col-sm-6"></div>
       <aside class="col-sm-4">
-        <h3 class="subtitle-white py-3">Fun Courses</h3>
+        <h3 class="subtitle-white py-3">Artistas para la Vida Platform</h3>
         <p class="white">
-          The user can create, like, and subscribe to courses, and can friend other users as well. The back-end of the app is built with Ruby on Rails as an API.
+          artistasparalavida.com is a project for the artist's industry in Colombia.
         </p>
-        <span class="tag-bg-white my-1">React</span>
-        <span class="tag-bg-white my-1">Redux</span>
         <span class="tag-bg-white my-1">Ruby on Rails</span>
-        <span class="tag-bg-white my-1">RSpec</span>
-        <span class="tag-bg-white my-1">Jest</span>
-        <button class="black-project orange-bg p-2 border-0 d-block" onclick="showProject(5)">See Project</button>
+        <span class="tag-bg-white my-1">Spree</span>
+        <span class="tag-bg-white my-1">Docker Compose</span>
+        <span class="tag-bg-white my-1">Stimulus JS</span>
+        <button class="black-project orange-bg p-2 border-0 d-block" onclick="showProject(0)">See Project</button>
       </aside>
       <div class="col-sm-1"></div>
     </div>
+    <div id="1" onmouseover="displayProjects(0)" class="projects-mini position-relative order-4">
+      <div class="degrade">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="p-3 pt-5">
+          <h4 class="title-black-project">
+          Fun Courses
+          </h4>
+          <p class="black-project">
+            The user can create, like, and subscribe to courses, and can friend other users as well. The back-end of the app is built with Ruby on Rails as an API.
+          </p>
+          <span class="tag-bg-black my-1">Ruby on Rails</span>
+          <span class="tag-bg-black my-1">React</span>
+          <span class="tag-bg-black my-1">Jest</span>
+          <span class="tag-bg-black my-1">Netlify</span>
+        </div>
+        <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(1)">See Project</div>
+      </div>
+      <div class="w-100 h-100 bg-pic-fun d-flex flex-column-reverse hover-projects" onmouseout="hideProjects(0)" onclick="showProject(1)">
+        <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn cursor-custom">See Project</div>
+      </div>
+    </div>
     <div class="d-sm-flex flex-wrap justify-content-between py-5 projects-container">
-      <div id="1" onmouseover="displayProjects(0)" class="projects-mini position-relative order-6">
+      <div id="2" onmouseover="displayProjects(1)" class="projects-mini position-relative order-6">
         <div class="degrade">
           <br>
           <br>
@@ -323,13 +340,13 @@
             </p>
             <span class="tag-bg-black mt-1">Ruby</span>
           </div>
-          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(1)">See Project</div>
+          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(2)">See Project</div>
         </div>
-        <div class="w-100 h-100 bg-pic-scraper d-flex flex-column-reverse hover-projects" onmouseout="hideProjects(0)" onclick="showProject(1)">
+        <div class="w-100 h-100 bg-pic-scraper d-flex flex-column-reverse hover-projects" onmouseout="hideProjects(1)" onclick="showProject(2)">
           <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn cursor-custom">See Project</div>
         </div>
       </div>
-      <div id="2" onmouseover="displayProjects(1)" class="projects-mini position-relative order-2">
+      <div id="3" onmouseover="displayProjects(2)" class="projects-mini position-relative order-2">
         <div class="degrade">
           <br>
           <br>
@@ -347,32 +364,9 @@
             <span class="tag-bg-black mt-1">HTML</span>
             <span class="tag-bg-black mt-1">SASS</span>
           </div>
-          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(2)">See Project</div>
-        </div>
-        <div class="w-100 h-100 bg-pic-pets d-flex flex-column-reverse hover-projects" onmouseout="hideProjects(1)" onclick="showProject(2)">
-          <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn cursor-custom">See Project</div>
-        </div>
-      </div>
-      <div id="3" onmouseover="displayProjects(2)" class="projects-mini position-relative order-4">
-        <div class="degrade">
-          <br>
-          <br>
-          <br>
-          <br>
-          <div class="p-3 pt-5">
-            <h4 class="title-black-project">
-            Elsa Pachón Web Page
-            </h4>
-            <p class="black-project">
-              elsapachonmanager.com is a project for the Academy of Arts Sueños en Escena in Colombia.
-            </p>
-            <span class="tag-bg-black mt-1">PHP</span>
-            <span class="tag-bg-black mt-1">CSS</span>
-            <span class="tag-bg-black mt-1">HTML</span>
-          </div>
           <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(3)">See Project</div>
         </div>
-        <div class="w-100 h-100 bg-pic-elsa d-flex flex-column-reverse hover-projects" onmouseout="hideProjects(2)" onclick="showProject(3)">
+        <div class="w-100 h-100 bg-pic-pets d-flex flex-column-reverse hover-projects" onmouseout="hideProjects(2)" onclick="showProject(3)">
           <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn cursor-custom">See Project</div>
         </div>
       </div>
@@ -399,33 +393,7 @@
           <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn cursor-custom">See Project</div>
         </div>
       </div>
-      <div id="0" onmouseover="displayProjects(4)" class="projects-mini position-relative order-5">
-        <div class="degrade">
-          <br>
-          <br>
-          <br>
-          <br>
-          <div class="p-3 pt-5">
-            <h4 class="title-black-project">
-              Workout project app
-            </h4>
-            <p class="black-project">
-              Users can write articles about exercise or workout individually, in groups,
-              indoors, or outdoors.
-            </p>
-            <span class="tag-bg-black mt-1">Ruby on Rails</span>
-            <span class="tag-bg-black mt-1">Ruby</span>
-            <span class="tag-bg-black mt-1">Bootstrap</span>
-            <span class="tag-bg-black mt-1">RSpec</span>
-            <span class="tag-bg-black mt-1">Cloudinary</span>
-          </div>
-          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(0)">See Project</div>
-        </div>
-        <div class="w-100 h-100 bg-pic-workout d-flex flex-column-reverse hover-projects" onmouseout="hideProjects(4)" onclick="showProject(0)">
-          <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn cursor-custom">See Project</div>
-        </div>
-      </div>
-      <div id="6" onmouseover="displayProjects(5)" class="projects-mini position-relative order-1">
+      <div id="5" onmouseover="displayProjects(4)" class="projects-mini position-relative order-1">
         <div class="degrade">
           <br>
           <br>
@@ -443,9 +411,9 @@
             <span class="tag-bg-black mt-1">Webpack</span>
             <span class="tag-bg-black mt-1">Jest</span>
           </div>
-          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(6)">See Project</div>
+          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(5)">See Project</div>
         </div>
-        <div class="w-100 h-100 bg-pic-aurora d-flex flex-column-reverse hover-projects" onmouseout="hideProjects(5)" onclick="showProject(6)">
+        <div class="w-100 h-100 bg-pic-aurora d-flex flex-column-reverse hover-projects" onmouseout="hideProjects(4)" onclick="showProject(5)">
           <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn cursor-custom">See Project</div>
         </div>
       </div>
@@ -460,7 +428,7 @@
       <div id="me" class="col-sm-6">
         <h3 class="main-title py-4">About me</h3>
         <p class="black-project pb-3">
-          I consider myself a person interested in constant self-improvement, so besides having a strong foundation in Ruby on Rails, React and Redux, I am also open to learning new languages and other stacks.
+          I consider myself a person interested in constant self-improvement, so besides having a strong foundation in web development I am adapting to the AI new era and starting to develop self-AI projects.
         </p>
         <a class="orange-bg justify-content-center text-light p-2" href="assets/resume.pdf" download="resume" name="Javier Botero Resume">
             Get my Resume
@@ -483,8 +451,8 @@
         </div>
         <span class="items-about-me">Ruby</span>
         <span class="items-about-me">JavaScript</span>
+        <span class="items-about-me">Python</span>
         <span class="items-about-me">SQL</span>
-        <span class="items-about-me">CSS</span>
       </div>
       <div class="d-flex flex-column align-items-center">
         <div class="d-flex align-items-center">
@@ -493,8 +461,8 @@
         </div>
         <span class="items-about-me">Ruby on Rails</span>
         <span class="items-about-me">React & Redux</span>
-        <span class="items-about-me">RSpec</span>
-        <span class="items-about-me">SASS</span>
+        <span class="items-about-me">Tensorflow</span>
+        <span class="items-about-me">NextJS</span>
       </div>
       <div class="d-flex flex-column align-items-center">
         <div class="d-flex align-items-center">
