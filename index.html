@@ -8,12 +8,12 @@
 
  <!-- SASS -->
 
-<!-- To transpile from sass to css just run `sass assets/sass/style.scss assets/sass/style.cs` 
+<!-- To transpile from sass to css just run `sass assets/sass/style.scss assets/sass/style.cs`
  this is for any change in a picture or fix of a class -->
 
 <!-- Main CSS classes -->
 
-<!-- The .tag-bg-white and tag-bg-black are for the little tags like Ruby on Rails pictures 
+<!-- The .tag-bg-white and tag-bg-black are for the little tags like Ruby on Rails pictures
  so if the picture is white use .tag-bg-white so everything displays well -->
 
 
@@ -300,32 +300,35 @@
       </aside>
       <div class="col-sm-1"></div>
     </div>
-    <div id="1" onmouseover="displayProjects(0)" class="projects-mini position-relative order-4">
-      <div class="degrade">
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="p-3 pt-5">
-          <h4 class="title-black-project">
-          Fun Courses
-          </h4>
-          <p class="black-project">
-            The user can create, like, and subscribe to courses, and can friend other users as well. The back-end of the app is built with Ruby on Rails as an API.
-          </p>
-          <span class="tag-bg-black my-1">Ruby on Rails</span>
-          <span class="tag-bg-black my-1">React</span>
-          <span class="tag-bg-black my-1">Jest</span>
-          <span class="tag-bg-black my-1">Netlify</span>
+
+    <!-- Simple cards -->
+
+    <div class="d-sm-flex flex-wrap justify-content-start py-5 projects-container">
+      <div id="1" onmouseover="displayProjects(0)" class="projects-mini position-relative order-1">
+        <div class="degrade">
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="p-3 pt-5">
+            <h4 class="title-black-project">
+            Fun Courses
+            </h4>
+            <p class="black-project">
+              The user can create, like, and subscribe to courses, and can friend other users as well. The back-end of the app is built with Ruby on Rails as an API.
+            </p>
+            <span class="tag-bg-black my-1">Ruby on Rails</span>
+            <span class="tag-bg-black my-1">React</span>
+            <span class="tag-bg-black my-1">Jest</span>
+            <span class="tag-bg-black my-1">Netlify</span>
+          </div>
+          <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(1)">See Project</div>
         </div>
-        <div class="orange-bg d-flex justify-content-center text-light py-2 d-sm-none" onclick="showProject(1)">See Project</div>
+        <div class="w-100 h-100 bg-pic-fun d-flex flex-column-reverse hover-projects" onmouseout="hideProjects(0)" onclick="showProject(1)">
+          <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn cursor-custom">See Project</div>
+        </div>
       </div>
-      <div class="w-100 h-100 bg-pic-fun d-flex flex-column-reverse hover-projects" onmouseout="hideProjects(0)" onclick="showProject(1)">
-        <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn cursor-custom">See Project</div>
-      </div>
-    </div>
-    <div class="d-sm-flex flex-wrap justify-content-between py-5 projects-container">
-      <div id="2" onmouseover="displayProjects(1)" class="projects-mini position-relative order-6">
+      <div id="2" onmouseover="displayProjects(1)" class="projects-mini position-relative order-5">
         <div class="degrade">
           <br>
           <br>
@@ -346,7 +349,7 @@
           <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn cursor-custom">See Project</div>
         </div>
       </div>
-      <div id="3" onmouseover="displayProjects(2)" class="projects-mini position-relative order-2">
+      <div id="3" onmouseover="displayProjects(2)" class="projects-mini position-relative order-4">
         <div class="degrade">
           <br>
           <br>
@@ -393,7 +396,7 @@
           <div class="orange-bg justify-content-center text-light py-2 d-none switcher-btn cursor-custom">See Project</div>
         </div>
       </div>
-      <div id="5" onmouseover="displayProjects(4)" class="projects-mini position-relative order-1">
+      <div id="5" onmouseover="displayProjects(4)" class="projects-mini position-relative order-2">
         <div class="degrade">
           <br>
           <br>
